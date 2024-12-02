@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Борщ</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <!-- Навигационное меню -->
+    <navigation>
+        <a class="menu-link" style="font-size: 18px;" href="../index.html">Домой</a>
+        <a class="menu-link" style="font-size: 18px;" href="../pages/borscht.html">Борщ</a>
+        <a class="menu-link" style="font-size: 18px;" href="../pages/dumplings.html">Пельмени</a>
+        <a class="menu-link" style="font-size: 18px;" href="../pages/pancakes.html">Блины</a>
+        <button class="menu-button" onclick="showMenu()">Меню</button>
+    </navigation>
+</header>
+
+<section class="menu">
+    <a href="../index.html">Главная страница</a>
+    <a href="https://ru.wikipedia.org/wiki/Борщ">Wiki</a>
+    <a href="https://www.russianfood.com/">RussianFood.ru</a>
+    <a href="https://food.ru/">Food.ru</a>
+</section>
+
+<div style="margin-top: 100px" class="content">
+    <h1 id="begin" class="title">Борщ</h1>
+    <p>
+        <strong>Борщ</strong> — это традиционный русско-украинский суп, известный своим насыщенным вкусом и ярким цветом. Этот сытный и ароматный суп готовится на основе свёклы, что придаёт ему характерный красный цвет, а также добавления мяса, овощей и различных пряностей.
+    </p>
+
+    <h2 id="description">Описание блюда</h2>
+    <p>
+        Борщ — это не просто суп, это настоящая кулинарная традиция, которой гордятся многие народы Восточной Европы. Он часто готовится с мясом (свинина или говядина), капустой, картофелем, луком и морковью. Также в борщ часто добавляют чеснок и уксус, чтобы подчеркнуть его вкус. У каждой хозяйки есть свой секрет приготовления борща, а подавать его обычно принято со сметаной и зеленью.
+    </p>
+
+    <img style="display: block; margin: 20px auto; max-width: 70%; border-radius: 15px;" src="../images/borscht.jpg">
+
+    <h2 id="recipe">Рецепт борща</h2>
+    <p>Вот краткий рецепт для борща:</p>
+    <ol>
+        <li>Варим мясо (свинина или говядина) в 2 литрах воды до готовности.</li>
+        <li>Тем временем обжариваем нарезанный лук, морковь и свёклу.</li>
+        <li>Добавляем обжаренные овощи в бульон, варим 20 минут.</li>
+        <li>Добавляем картофель и капусту, варим ещё 20-30 минут.</li>
+        <li>В конце добавляем уксус, чеснок, соль и перец по вкусу.</li>
+        <li>Подаём с ложкой сметаны и зеленью.</li>
+    </ol>
+
+    <h2 id="video">Видеоурок по приготовлению борща</h2>
+    <video width="560" height="315" controls>
+        <source src="../videos/borscht.mp4">
+    </video>
+
+</div>
+
+
+<info style="text-align:center; padding:10px; font-size:20px;">
+    <h5>Сделал Ноздрюхин Давид<br/>Группа ПИН-14, МИЭТ<br/>© 2024</h5>
+</info>
+
+<script>
+    function showMenu() {
+        const menu = document.querySelector('.menu');
+        const visibility = menu.style.display;
+
+        if (visibility === 'none' || visibility === '') {
+            menu.style.display = 'block';
+        } else {
+            menu.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

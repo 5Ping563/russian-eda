@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пельмени</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <!-- Навигационное меню -->
+    <navigation>
+        <a class="menu-link" style="font-size: 18px;" href="../index.html">Домой</a>
+        <a class="menu-link" style="font-size: 18px;" href="../pages/borscht.html">Борщ</a>
+        <a class="menu-link" style="font-size: 18px;" href="../pages/dumplings.html">Пельмени</a>
+        <a class="menu-link" style="font-size: 18px;" href="../pages/pancakes.html">Блины</a>
+        <button class="menu-button" onclick="showMenu()">Меню</button>
+    </navigation>
+</header>
+
+<section class="menu">
+    <a href="../index.html">Главная страница</a>
+    <a href="https://ru.wikipedia.org/wiki/Пельмени">Wiki</a>
+    <a href="https://www.russianfood.com/">RussianFood.ru</a>
+    <a href="https://food.ru/">Food.ru</a>
+</section>
+
+<div style="margin-top: 100px" class="content">
+    <h1 id="begin" class="title">Пельмени</h1>
+    <p>
+        <strong>Пельмени</strong> — это традиционное русское блюдо, представляющее собой небольшие кулёчки, обвёрнутые в тесто и обычно наполненные мясной начинкой. Это одно из самых популярных блюд, которое часто готовят на праздники и семейные ужины.
+    </p>
+
+    <h2 id="description">Описание блюда</h2>
+    <p>
+        Пельмени являются настоящей кулинарной традицией, распространившейся в России и других странах Восточной Европы. Они готовятся из тонкого теста, в которое завернута мясная начинка (чаще всего говядина, свинина или курица). Пельмени могут быть как варёными, так и жареными, и часто подаются с различными соусами, такими как сметана, уксус или горчица.
+    </p>
+
+    <img style="display: block; margin: 20px auto; max-width: 70%; border-radius: 15px;" src="../images/dumplings.jpg">
+
+    <h2 id="recipe">Рецепт пельменей</h2>
+    <p>Вот простой рецепт для <strong>замороженных</strong> пельменей:</p>
+    <ol>
+        <li>Достаём замороженные пельмени.</li>
+        <li>Варим пельмени в кипящей воде до готовности (примерно 5-7 минут после того, как они всплывут).</li>
+        <li>Подаём с соусом по вкусу.</li>
+    </ol>
+
+    <h2 id="video">Видеоурок по приготовлению пельменей</h2>
+    <video width="560" height="315" controls>
+        <source src="../videos/dumplings.mp4">
+    </video>
+
+</div>
+
+<info style="text-align:center; padding:10px; font-size:20px;">
+    <h5>Сделал Ноздрюхин Давид<br/>Группа ПИН-14, МИЭТ<br/>© 2024</h5>
+</info>
+
+<script>
+    function showMenu() {
+        const menu = document.querySelector('.menu');
+        const visibility = menu.style.display;
+
+        if (visibility === 'none' || visibility === '') {
+            menu.style.display = 'block';
+        } else {
+            menu.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

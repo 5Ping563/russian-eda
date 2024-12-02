@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блины</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+  <!-- Навигационное меню -->
+  <navigation>
+    <a class="menu-link" style="font-size: 18px;" href="../index.html">Домой</a>
+    <a class="menu-link" style="font-size: 18px;" href="borscht.html">Борщ</a>
+    <a class="menu-link" style="font-size: 18px;" href="dumplings.html">Пельмени</a>
+    <a class="menu-link" style="font-size: 18px;" href="../pages/pancakes.html">Блины</a>
+    <button class="menu-button" onclick="showMenu()">Меню</button>
+  </navigation>
+</header>
+
+<section class="menu">
+  <a href="../index.html">Главная страница</a>
+  <a href="https://ru.wikipedia.org/wiki/Блины">Wiki</a>
+  <a href="https://www.russianfood.com/">RussianFood.ru</a>
+  <a href="https://food.ru/">Food.ru</a>
+</section>
+
+<div style="margin-top: 100px" class="content">
+  <h1 id="begin" class="title">Блины</h1>
+  <p>
+    <strong>Блины</strong> — это традиционное русское блюдо, представляющее собой тонкие круглые лепёшки, приготовленные из теста на основе молока, муки, яиц и масла. Блины являются важной частью русской кухни, особенно популярны на Масленицу.
+  </p>
+
+  <h2 id="description">Описание блюда</h2>
+  <p>
+    Блины готовятся на сковороде и могут быть как сладкими, так и несладкими. Они могут быть поданы с различными начинками, такими как мясо, творог, икры, а также с мёдом, вареньем или сметаной. В русской традиции блины символизируют солнце и часто подаются на праздниках, таких как Масленица.
+  </p>
+
+  <img style="display: block; margin: 20px auto; max-width: 70%; border-radius: 15px;" src="../images/pancakes.webp">
+
+  <h2 id="recipe">Рецепт блинов</h2>
+  <p>Вот простой рецепт для блинов:</p>
+  <ol>
+    <li>В глубокой миске взбиваем яйца, добавляем молоко и муку, а затем постепенно вводим воду, чтобы тесто получилось жидким, но не слишком. Добавляем щепотку соли и немного сахара.</li>
+    <li>Разогреваем сковороду с небольшим количеством масла и выливаем тесто, равномерно распределяя по поверхности сковороды.</li>
+    <li>Когда блин подрумянится с одной стороны, переворачиваем его на другую и обжариваем ещё пару минут.</li>
+    <li>Готовые блины выкладываем на тарелку, а перед подачей можно смазать их маслом или подавать с начинкой по вкусу.</li>
+  </ol>
+
+  <h2 id="video">Видеоурок по приготовлению блинов</h2>
+  <video width="560" height="315" controls>
+    <source src="../videos/pancakes.mp4">
+  </video>
+
+</div>
+
+<info style="text-align:center; padding:10px; font-size:20px;">
+  <h5>Сделал Ноздрюхин Давид<br/>Группа ПИН-14, МИЭТ<br/>© 2024</h5>
+</info>
+
+<script>
+  function showMenu() {
+    const menu = document.querySelector('.menu');
+    const visibility = menu.style.display;
+
+    if (visibility === 'none' || visibility === '') {
+      menu.style.display = 'block';
+    } else {
+      menu.style.display = 'none';
+    }
+  }
+</script>
+
+</body>
+</html>
